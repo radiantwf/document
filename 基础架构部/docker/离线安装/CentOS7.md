@@ -16,6 +16,7 @@
 > 
 > docker-engine-selinux-(verson).rpm
 > 
+
 ##### 2、安装
 >安装方法如下：
 > 
@@ -23,5 +24,6 @@
     mkdir -p /var/lib/docker
     rpm -ivh ./docker-engine-selinux-1.12.3-1.el7.centos.noarch.rpm
     rpm -ivh ./docker-engine-1.12.3-1.el7.centos.x86_64.rpm
+
 ##### 3、重启Docker服务
     service docker restart
