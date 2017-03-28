@@ -18,12 +18,15 @@
 > 
 >Docker 容器 - Docker containers
 > 
+
 #### Docker 镜像
 >Docker 镜像是 Docker 容器运行时的只读模板，每一个镜像由一系列的层 (layers) 组成。Docker 使用 UnionFS 来将这些层联合到单独的镜像中。UnionFS 允许独立文件系统中的文件和文件夹(称之为分支)被透明覆盖，形成一个单独连贯的文件系统。正因为有了这些层的存在，Docker 是如此的轻量。当你改变了一个 Docker 镜像，比如升级到某个程序到新的版本，一个新的层会被创建。因此，不用替换整个原先的镜像或者重新建立(在使用虚拟机的时候你可能会这么做)，只是一个新 的层被添加或升级了。现在你不用重新发布整个镜像，只需要升级，层使得分发 Docker 镜像变得简单和快速。
 > 
+
 #### Docker 仓库
 >Docker 仓库用来保存镜像，可以理解为代码控制中的代码仓库。同样的，Docker 仓库也有公有和私有的概念。公有的 Docker 仓库名字是 Docker Hub。Docker Hub 提供了庞大的镜像集合供使用。这些镜像可以是自己创建，或者在别人的镜像基础上创建。Docker 仓库是 Docker 的分发部分。
 > 
+
 #### Docker 容器
 >Docker 容器和文件夹很类似，一个Docker容器包含了所有的某个应用运行所需要的环境。每一个 Docker 容器都是从 Docker 镜像创建的。Docker 容器可以运行、开始、停止、移动和删除。每一个 Docker 容器都是独立和安全的应用平台，Docker 容器是 Docker 的运行部分。
 > 
@@ -39,28 +42,23 @@
 >docker pull命令
 > 
     例：docker pull hello-world
-
 > 
 ![docker-pull](./res/docker-pull.png)
 > 
-
 >docker run命令（启动容器命令）
 > 
     例：docker run hello-world
 >若本地不存在要启动的Image，则线连接服务器下载Image
 > 
-
 ![docker-run](./res/docker-run.png)
-
-
+> 
 ### 3.2 查看本地Docker Image
 >docker images 命令
 > 
     例：docker images
-
+> 
 ![docker-images](./res/docker-images.png)
-
-
+> 
 ### 3.3 Image简介
 >Repository： 可以理解为Image的名称。
 > 
@@ -68,26 +66,23 @@
 > 
 >Image ID：Image的Guid。
 > 
-
 ### 3.4 Image搜索
 >docker search 命令
 > 
     例：docker search java
 >说明：检索所有包含java关键字的Image
 > 
-
 ![docker-search](./res/docker-search.png)
-
+> 
 >Tag检索：命令行方式未找到方法，可以通过Docker Hub检索。
 > 
-
 ### 3.5 删除本地Image
 >docker rmi 命令
 > 
     例：docker rmi c54a2cc56cbb
 >说明：删除Image ID为c54a2cc56cbb的本地Image
 > 
-  
+> 
 >小技巧：删除所有本地Image
 > 
     docker rmi $(docker images -q -a)
@@ -104,23 +99,18 @@
 > 
 >浏览器打开上述网址即可，需要注册。
 > 
-
 ![dockerhub-index](./res/dockerhub-index.png)
-
-
+> 
 ### 4.2 Image搜索
 >搜索Java，结果如下：
-
+> 
 ![dockerhub-search](./res/dockerhub-search.png)
-
-
+> 
 ### 4.3 Image详细信息
 >点击第一个搜索结果后边的Details按钮，可以查看这个Image的详细信息。
 > 
-
 ![dockerhub-java](./res/dockerhub-java.png)
-
-
+> 
 >页面中的文字信息，包含该项目的描述信息。一般官方Image的信息比较全，比如Java的包含详细的版本信息，对应不同Tag的Docerfile的链接，以及如何使用这个Image。
 > 
 >通过页面中的事例可以build一个包含应用和jre7的镜像（Image），并且在一个容器中启动这个镜像的应用。
@@ -146,13 +136,12 @@
 >docker run命令
 > 
     例： docker run hello-world
-
+> 
 ### 5.2 查看container
 >docker ps命令
 > 
     例：docker ps / docker ps –a
 >说明：包含-a参数是指查询所有容器，包含已经退出的。没有-a参数的只显示正在运行的容器。
-
 ### 5.3 其他container操作
 >docker stop/start命令	停止、启动容器
 > 
@@ -164,7 +153,6 @@
 > 
 >上述操作的具体语法，请参照docker语法说明
 > 
-
 ### 5.4 与container交互
 >docker run –i
 > 
@@ -182,6 +170,7 @@
 > 
 >方法二：使用docker commit命令提交已经存在的容器创建Docker Image。
 > 
+
 ### Dockerfle语法简介
 >指令的一般格式为 INSTRUCTION arguments ，指令包括 FROM 、 MAINTAINER 、RUN 等。
 > 
@@ -283,9 +272,9 @@
 >   
 >下面为java:7-jre的Dockerfile内容：
 > 
-
+> 
 ![dockerfile](./res/dockerfile.png)
-
+> 
 >根据dockerfile文件的语法介绍，可以轻松理解上述内容。
 > 
 

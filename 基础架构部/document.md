@@ -7,7 +7,7 @@
 > 
 >[go](./go/go.md)
 > 
->[angular2+](./angular2/angular2.md)
+>[angular2+](./angular2/angular.md)
 > 
 >[nginx](./nginx/nginx.md)
 > 
