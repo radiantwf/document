@@ -283,7 +283,6 @@ docker stop/start命令	停止、启动容器
  
     FROM image-A
  
-
     #Automatically run the following
     ADD . /app/src
     RUN /usr/local/bin/python-build --dir /app/src
@@ -294,8 +293,6 @@ docker stop/start命令	停止、启动容器
  
 ![dockerfile](./res/dockerfile.png)
  
-
-   
 根据dockerfile文件的语法介绍，可以轻松理解上述内容。
 
 ## 七、	Docker私有库
