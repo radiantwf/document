@@ -29,7 +29,7 @@
 > 
 
 ## 二、	Docker安装
->请参照官方文档（https://docs.docker.com/engine/installation/）。
+>请参照[官方文档](https://docs.docker.com/engine/installation/)。
 > 
 >Windows、Mac OS下载安装包，安装即可。
 > 
@@ -332,15 +332,15 @@
     $ docker push 私有库IP:5000/Ubuntu
 
 ## 八、	参考文档
->一些 Docker 的技巧与秘诀 - yexiaoxiaobai – SegmentFault
+> [一些 Docker 的技巧与秘诀 - yexiaoxiaobai – SegmentFault](https://segmentfault.com/a/1190000000482229)
 > 
->Docker 4 -- 总结
+>[Docker 4 -- 总结](https://blog.tankywoo.com/docker/2014/05/08/docker-4-summary.html)
 > 
->docker详细的基础用法 - OPEN 开发经验库
+>[docker详细的基础用法 - OPEN 开发经验库](http://www.open-open.com/lib/view/open1410568733492.html)
 > 
->非常详细的 Docker 学习笔记 - OPEN 开发经验库
+>[非常详细的 Docker 学习笔记 - OPEN 开发经验库](http://www.open-open.com/lib/view/open1423703640748.html)
 > 
->Dockerfile指令总结 - 推酷
+>[Dockerfile指令总结 - 推酷](http://www.tuicool.com/articles/e2YrE3j)
 > 
->利用Docker构建开发环境 | UC技术博客
+>[利用Docker构建开发环境 | UC技术博客](http://tech.uc.cn/?p=2726)
 > 
