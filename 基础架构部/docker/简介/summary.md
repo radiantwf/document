@@ -44,15 +44,15 @@ docker run命令（启动容器命令）
  
 若本地不存在要启动的Image，则线连接服务器下载Image
  
-![docker-run](./res/docker-run.png)
-
+![docker-run](./res/docker-run.png) 
+ 
 ### 3.2 查看本地Docker Image
 docker images 命令
  
 例：`docker images`
  
 ![docker-images](./res/docker-images.png)
-
+ 
 ### 3.3 Image简介
 Repository： 可以理解为Image的名称。
  
@@ -96,12 +96,12 @@ URL：https://hub.docker.com/
 浏览器打开上述网址即可，需要注册。
  
 ![dockerhub-index](./res/dockerhub-index.png)
-
+ 
 ### 4.2 Image搜索
 搜索Java，结果如下：
  
 ![dockerhub-search](./res/dockerhub-search.png)
-
+ 
 ### 4.3 Image详细信息
 点击第一个搜索结果后边的Details按钮，可以查看这个Image的详细信息。
  
@@ -142,20 +142,20 @@ docker ps命令
 ### 5.3 其他container操作
 docker stop/start命令	停止、启动容器
  
-docker rm						删除容器
+`docker rm`						删除容器
  
-docker top					显示容器内的进程
+`docker top`					显示容器内的进程
  
-docker commit					提交容器保存成新的镜像
+`docker commit`					提交容器保存成新的镜像
  
 上述操作的具体语法，请参照docker语法说明
 
 ### 5.4 与container交互
-docker run –i
+`docker run –i`
  
-docker start –i
+`docker start –i`
  
-docker cp
+`docker cp`
  
 上述操作的具体语法，请参照docker语法说明
 
@@ -294,6 +294,8 @@ docker cp
  
 ![dockerfile](./res/dockerfile.png)
  
+
+   
 根据dockerfile文件的语法介绍，可以轻松理解上述内容。
 
 ## 七、	Docker私有库
@@ -305,7 +307,7 @@ Docker 官方提供了 docker registry 的构建方法 docker-registry
  
 •	安装 docker
  
-•	运行 registry:docker run -p 5000:5000 registry
+•	运行 `registry:docker run -p 5000:5000 registry`
  
 这种方法通过 Docker hub 使用官方镜像 official image from the Docker hub
  
@@ -317,7 +319,7 @@ Docker 官方提供了 docker registry 的构建方法 docker-registry
  
 配置 docker-registry
  
-    sudo pip install docker-registry
+    $ sudo pip install docker-registry
  
 或者 使用 github clone 手动安装
  
@@ -326,9 +328,9 @@ Docker 官方提供了 docker registry 的构建方法 docker-registry
     $ cp config/config_sample.yml config/config.yml
     $ mkdir /data/registry -p
     $ pip install .
- 运行
  
-    docker-registry
+运行 docker-registry
+ 
 高级启动方式 [不推荐]
  
 使用gunicorn控制:
