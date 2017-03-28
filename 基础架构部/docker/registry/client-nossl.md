@@ -15,6 +15,7 @@
 > 
     vi /etc/init.d/docker
 > 
+> 
     $exec -d $other_args &>> $logfile &
 > 
 >=>
