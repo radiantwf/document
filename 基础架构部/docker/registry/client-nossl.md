@@ -15,7 +15,7 @@
 > 
     vi /etc/init.d/docker
 > 
-> 
+> 修改：
 > 
     $exec -d $other_args &>> $logfile &
 > 
