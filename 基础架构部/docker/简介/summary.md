@@ -2,95 +2,89 @@
 ## 一、	Docker 简介
 >Docker 使用客户端-服务器 (C/S) 架构模式。Docker 客户端会与 Docker 守护进程进行通信。Docker 守护进程会处理复杂繁重的任务，例如建立、运行、发布你的 Docker 容器。Docker 客户端和守护进程可以运行在同一个系统上，当然你也可以使用 Docker 客户端去连接一个远程的 Docker 守护进程。Docker 客户端和守护进程之间通过 socket 或者 RESTful API 进行通信。
 > 
-![结构图](./res/structure.png "结构图")
+>![结构图](./res/structure.png "结构图")
 > 
-
-### 1.1 Docker 守护进程
->如上图所示，Docker 守护进程运行在一台主机上。用户并不直接和守护进程进行交互，而是通过 Docker 客户端间接和其通信。
-### 1.2 Docker 客户端
->Docker 客户端，实际上是 docker 的二进制程序，是主要的用户与 Docker 交互方式。它接收用户指令并且与背后的 Docker 守护进程通信，如此来回往复。
-### 1.3 Docker 内部
->要理解 Docker 内部构建，需要理解以下三种部件：
-> 
->Docker 镜像 - Docker images
-> 
->Docker 仓库 - Docker registeries
-> 
->Docker 容器 - Docker containers
-> 
-
-#### Docker 镜像
->Docker 镜像是 Docker 容器运行时的只读模板，每一个镜像由一系列的层 (layers) 组成。Docker 使用 UnionFS 来将这些层联合到单独的镜像中。UnionFS 允许独立文件系统中的文件和文件夹(称之为分支)被透明覆盖，形成一个单独连贯的文件系统。正因为有了这些层的存在，Docker 是如此的轻量。当你改变了一个 Docker 镜像，比如升级到某个程序到新的版本，一个新的层会被创建。因此，不用替换整个原先的镜像或者重新建立(在使用虚拟机的时候你可能会这么做)，只是一个新 的层被添加或升级了。现在你不用重新发布整个镜像，只需要升级，层使得分发 Docker 镜像变得简单和快速。
-> 
-
-#### Docker 仓库
->Docker 仓库用来保存镜像，可以理解为代码控制中的代码仓库。同样的，Docker 仓库也有公有和私有的概念。公有的 Docker 仓库名字是 Docker Hub。Docker Hub 提供了庞大的镜像集合供使用。这些镜像可以是自己创建，或者在别人的镜像基础上创建。Docker 仓库是 Docker 的分发部分。
-> 
-
-#### Docker 容器
->Docker 容器和文件夹很类似，一个Docker容器包含了所有的某个应用运行所需要的环境。每一个 Docker 容器都是从 Docker 镜像创建的。Docker 容器可以运行、开始、停止、移动和删除。每一个 Docker 容器都是独立和安全的应用平台，Docker 容器是 Docker 的运行部分。
-> 
-
+>### 1.1 Docker 守护进程
+>>如上图所示，Docker 守护进程运行在一台主机上。用户并不直接和守护进程进行交互，而是通过 Docker 客户端间接和其通信。
+>### 1.2 Docker 客户端
+>>Docker 客户端，实际上是 docker 的二进制程序，是主要的用户与 Docker 交互方式。它接收用户指令并且与背后的 Docker 守护进程通信，如此来回往复。
+>### 1.3 Docker 内部
+>>要理解 Docker 内部构建，需要理解以下三种部件：
+>> 
+>>Docker 镜像 - Docker images
+>> 
+>>Docker 仓库 - Docker registeries
+>> 
+>>Docker 容器 - Docker containers
+>> 
+>#### Docker 镜像
+>>Docker 镜像是 Docker 容器运行时的只读模板，每一个镜像由一系列的层 (layers) 组成。Docker 使用 UnionFS 来将这些层联合到单独的镜像中。UnionFS 允许独立文件系统中的文件和文件夹(称之为分支)被透明覆盖，形成一个单独连贯的文件系统。正因为有了这些层的存在，Docker 是如此的轻量。当你改变了一个 Docker 镜像，比如升级到某个程序到新的版本，一个新的层会被创建。因此，不用替换整个原先的镜像或者重新建立(在使用虚拟机的时候你可能会这么做)，只是一个新 的层被添加或升级了。现在你不用重新发布整个镜像，只需要升级，层使得分发 Docker 镜像变得简单和快速。
+>> 
+>#### Docker 仓库
+>>Docker 仓库用来保存镜像，可以理解为代码控制中的代码仓库。同样的，Docker 仓库也有公有和私有的概念。公有的 Docker 仓库名字是 Docker Hub。Docker Hub 提供了庞大的镜像集合供使用。这些镜像可以是自己创建，或者在别人的镜像基础上创建。Docker 仓库是 Docker 的分发部分。
+>> 
+>#### Docker 容器
+>>Docker 容器和文件夹很类似，一个Docker容器包含了所有的某个应用运行所需要的环境。每一个 Docker 容器都是从 Docker 镜像创建的。Docker 容器可以运行、开始、停止、移动和删除。每一个 Docker 容器都是独立和安全的应用平台，Docker 容器是 Docker 的运行部分。
+>> 
 ## 二、	Docker安装
 >请参照[官方文档](https://docs.docker.com/engine/installation/)。
 > 
 >Windows、Mac OS下载安装包，安装即可。
 > 
-
 ## 三、	Docker Images
-### 3.1 下载Docker Image
->docker pull命令
-> 
+>### 3.1 下载Docker Image
+>>docker pull命令
+>> 
     例：docker pull hello-world
-> 
-![docker-pull](./res/docker-pull.png)
-> 
->docker run命令（启动容器命令）
-> 
+>> 
+>>![docker-pull](./res/docker-pull.png)
+>> 
+>>docker run命令（启动容器命令）
+>> 
     例：docker run hello-world
->若本地不存在要启动的Image，则线连接服务器下载Image
-> 
-![docker-run](./res/docker-run.png)
-> 
-### 3.2 查看本地Docker Image
->docker images 命令
-> 
+>>若本地不存在要启动的Image，则线连接服务器下载Image
+>> 
+>>![docker-run](./res/docker-run.png)
+>> 
+>### 3.2 查看本地Docker Image
+>>docker images 命令
+>> 
     例：docker images
-> 
-![docker-images](./res/docker-images.png)
-> 
-### 3.3 Image简介
->Repository： 可以理解为Image的名称。
-> 
->Tag：Image的标签，一般用来标识版本，latest表示最新版。
-> 
->Image ID：Image的Guid。
-> 
+>> 
+>>![docker-images](./res/docker-images.png)
+>>
+>### 3.3 Image简介
+>>Repository： 可以理解为Image的名称。
+>> 
+>>Tag：Image的标签，一般用来标识版本，latest表示最新版。
+>> 
+>>Image ID：Image的Guid。
+>> 
 ### 3.4 Image搜索
->docker search 命令
-> 
+>>docker search 命令
+>> 
     例：docker search java
->说明：检索所有包含java关键字的Image
-> 
-![docker-search](./res/docker-search.png)
-> 
->Tag检索：命令行方式未找到方法，可以通过Docker Hub检索。
-> 
+>>说明：检索所有包含java关键字的Image
+>> 
+>>![docker-search](./res/docker-search.png)
+>> 
+>>Tag检索：命令行方式未找到方法，可以通过Docker Hub检索。
+>> 
 ### 3.5 删除本地Image
->docker rmi 命令
-> 
+>>docker rmi 命令
+>> 
     例：docker rmi c54a2cc56cbb
->说明：删除Image ID为c54a2cc56cbb的本地Image
-> 
-> 
->小技巧：删除所有本地Image
-> 
+>>说明：删除Image ID为c54a2cc56cbb的本地Image
+>> 
+>> 
+>>小技巧：删除所有本地Image
+>> 
     docker rmi $(docker images -q -a)
-> 
->注：需要先关闭并删除所有容器
-> 
->删除所有容器和本地所有Image
-> 
+>> 
+>>注：需要先关闭并删除所有容器
+>> 
+>>删除所有容器和本地所有Image
+>> 
     docker kill $(docker ps -q) ; docker rm $(docker ps -a -q) ; docker rmi $(docker images -q -a) 
 
 ## 四、	Docker Hub
