@@ -169,7 +169,6 @@
 >方法一：使用docker build命令通过Dockerfile创建Docker Image；
 > 
 >方法二：使用docker commit命令提交已经存在的容器创建Docker Image。
-> 
 
 ### Dockerfle语法简介
 >指令的一般格式为 INSTRUCTION arguments ，指令包括 FROM 、 MAINTAINER 、RUN 等。
@@ -264,7 +263,8 @@
 >如果基于A创建新的镜像时，新的Dockerfile中使用 FROM image-A 指定基础镜像时，会自动执行 ONBUILD 指令内容，等价于在后面添加了两条指令。
 > 
     FROM image-A
-
+> 
+> 
     #Automatically run the following
     ADD . /app/src
     RUN /usr/local/bin/python-build --dir /app/src
