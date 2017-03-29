@@ -1,7 +1,7 @@
 # redigo学习笔记
 
 #### 安装
-命令号运行：
+命令行运行：
  
     go get -v -u github.com/garyburd/redigo/redis
 #### 引入
