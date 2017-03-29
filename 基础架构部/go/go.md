@@ -2,7 +2,7 @@
 
 这是Go的文档库
 
-#### 常用库
+#### 常用第三方库
 
 [mgo](https://godoc.org/gopkg.in/mgo.v2)
 
