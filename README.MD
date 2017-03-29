@@ -6,6 +6,8 @@
 [go](./go/go.md)
  
 [angular2+](./angular2/angular.md)
+
+[ionic2](./ionic2/ionic2.md)
  
 [nginx](./nginx/nginx.md)
  
