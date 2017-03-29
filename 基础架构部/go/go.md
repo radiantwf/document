@@ -9,7 +9,8 @@ mgo
 [笔记](./笔记/mgo.md)
  
 redigo
-[文档](https://github.com/garyburd/redigo)
+[首页](https://github.com/garyburd/redigo)
+[文档](https://godoc.org/github.com/garyburd/redigo/redis)
 [笔记](./笔记/redigo.md)
  
 beego
