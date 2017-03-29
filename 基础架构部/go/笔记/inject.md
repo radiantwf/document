@@ -110,3 +110,7 @@ The first no value syntax is for the common case of a singleton dependency of th
 
         fmt.Println(a.Render(42))
     }
+#### 注意事项
+1、 被注入的对象需要为指针类型
+ 
+2、 注意变量名首字母大小写
