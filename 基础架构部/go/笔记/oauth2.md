@@ -9,7 +9,7 @@
         "golang.org/x/oauth2"
     )
 #### Example
-##### password
+##### password:
 	ctx := context.Background()
 	conf := &oauth2.Config{
 		ClientID:     "O3gMpRJtROqw5v9WrYqm9zQlGAUjhFkojlNHFN7V",
@@ -17,7 +17,7 @@
 		Endpoint:     Endpoint,
 	}
 	tok, err := conf.PasswordCredentialsToken(ctx, username, password)
-##### code
+##### code:
     ctx := context.Background()
     conf := &oauth2.Config{
         ClientID:     "YOUR_CLIENT_ID",
