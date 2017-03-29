@@ -78,6 +78,6 @@
 	}
 	err = file.Close()
 ##### 获取文件
-	f, err := session.UseDB("local").GridFS("fs").OpenId(bson.ObjectIdHex(fileID))
+	f, err1 := session.UseDB("local").GridFS("fs").OpenId(bson.ObjectIdHex(fileID))
 ##### 删除文件
-	f, err := session.UseDB("local").GridFS("fs").RemoveId(bson.ObjectIdHex(fileID))
+	f, err1 := session.UseDB("local").GridFS("fs").RemoveId(bson.ObjectIdHex(fileID))
