@@ -4,7 +4,6 @@
 命令号运行：
  
     go get -v -u github.com/facebookgo/inject
-
 #### 引入
     import "github.com/facebookgo/inject"
 #### 注入
