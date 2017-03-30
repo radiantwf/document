@@ -5,6 +5,8 @@
 [时间戳和日期字符串的相互转换](./笔记/time.md)
  
 [字符串转换strconv包](./笔记/strconv.md)
+
+[字符串格式转换符](./笔记/strformat.md)
  
 #### 常用第三方库
 |常用库|索引|
@@ -25,6 +27,8 @@
  
 #### 快速链接
 [Effective Go](https://golang.org/doc/effective_go.html)
+ 
+[The Go Memory Model](https://golang.org/ref/mem)
  
 [The Littel Go Book(在线版)](http://openmymind.net/assets/go/go.pdf)
  
