@@ -1,5 +1,11 @@
 # websocket学习笔记
 
+#### 官方首页
+[转到](https://github.com/gorilla/websocket)
+
+#### 官方文档
+[转到](https://godoc.org/github.com/gorilla/websocket)
+
 #### 安装
 命令行运行：
     go get -v -u github.com/gorilla/websocket

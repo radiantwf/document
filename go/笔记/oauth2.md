@@ -1,5 +1,8 @@
 # oauth2学习笔记
 
+#### 官方文档
+[转到](https://godoc.org/golang.org/x/oauth2)
+
 #### 安装
 命令行运行：
  

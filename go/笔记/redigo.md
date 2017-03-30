@@ -1,5 +1,11 @@
 # redigo学习笔记
 
+#### 官方首页
+[转到](https://github.com/garyburd/redigo)
+
+#### 官方文档
+[转到](https://godoc.org/github.com/garyburd/redigo/redis)
+
 #### 安装
 命令行运行：
  

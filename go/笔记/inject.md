@@ -1,5 +1,11 @@
 # inject学习笔记
 
+#### 官方首页
+[转到](https://github.com/facebookgo/inject)
+
+#### 官方文档
+[转到](https://godoc.org/github.com/facebookgo/inject)
+
 #### 安装
 命令行运行：
 

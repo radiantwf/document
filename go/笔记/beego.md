@@ -1,4 +1,11 @@
 # beego学习笔记
+
+#### 官方首页
+[转到](https://beego.me)
+
+#### 官方文档
+[转到](https://beego.me/docs/intro/)
+
 #### 安装
 命令行运行：
 ```

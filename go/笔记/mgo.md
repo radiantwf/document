@@ -1,5 +1,11 @@
 # mgo学习笔记
 
+#### 官方首页
+[转到](http://labix.org/mgo)
+
+#### 官方文档
+[转到](https://godoc.org/gopkg.in/mgo.v2)
+
 #### 安装
 命令行运行：
 
