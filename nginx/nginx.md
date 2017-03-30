@@ -132,5 +132,5 @@ upstream bakend{
     server 10.0.0.11:8080 weight=2; 
     server 10.0.0.11:6060; 
     server 10.0.0.11:7070 backup; 
-```
 }
+```
