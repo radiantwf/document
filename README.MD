@@ -5,6 +5,8 @@
  
 [go](./go/go.md)
  
+[typescript](./typescript/typescript.md)
+
 [angular2+](./angular2/angular.md)
 
 [ionic2](./ionic2/ionic2.md)
