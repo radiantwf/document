@@ -55,6 +55,7 @@ location / {
 #### 负载均衡配置
 如果Nginx没有仅仅只能代理一台服务器的话，那它也不可能像今天这么火，Nginx可以配置代理多台服务器，当一台服务器宕机之后，仍能保持系统可用。具体配置过程如下：
 1. 在http节点下，添加upstream节点。
+
 ```
 upstream linuxidc { 
     server 10.0.6.108:7080; 
@@ -63,6 +64,7 @@ upstream linuxidc {
 ```
 2. 将server节点下的location节点中的proxy_pass配置为：http:// + upstream名称，即“
 http://linuxidc”.
+
 ```
 location / { 
     root  html; 
