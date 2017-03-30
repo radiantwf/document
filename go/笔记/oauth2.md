@@ -1,7 +1,10 @@
-# oauth2学习笔记
+# Go OAuth 2.0 Client学习笔记
 
 #### 官方文档
 [转到](https://godoc.org/golang.org/x/oauth2)
+
+#### OAuth2简介
+[转到](../../oauth2/oauth2.md)
 
 #### 安装
 命令行运行：

@@ -18,7 +18,7 @@
 |beego|[首页](https://beego.me)&emsp;[文档](https://beego.me/docs/intro/)&emsp;[笔记](./笔记/beego.md)|
 |websocket|[首页](https://github.com/gorilla/websocket)&emsp;[文档](https://godoc.org/github.com/gorilla/websocket)&emsp;[笔记](./笔记/websocket.md)|
 |inject|[首页](https://github.com/facebookgo/inject)&emsp;[文档](https://godoc.org/github.com/facebookgo/inject)&emsp;[笔记](./笔记/inject.md)|
-|oauth2|&emsp;&emsp;&emsp;[文档](https://godoc.org/golang.org/x/oauth2)&emsp;[笔记](./笔记/oauth2.md)|
+|Go OAuth 2.0 Client|&emsp;&emsp;&emsp;[文档](https://godoc.org/golang.org/x/oauth2)&emsp;[笔记](./笔记/oauth2.md)|
 
 #### 开源项目
 [buntdb](https://github.com/tidwall/buntdb)
