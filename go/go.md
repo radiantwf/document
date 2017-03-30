@@ -7,6 +7,8 @@
 [字符串转换strconv包](./笔记/strconv.md)
 
 [字符串格式转换符](./笔记/strformat.md)
+
+[对象深复制](./笔记/deepcopy.md)
  
 #### 常用第三方库
 |常用库|索引|
