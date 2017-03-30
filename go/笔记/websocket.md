@@ -2,7 +2,6 @@
 
 #### 安装
 命令行运行：
- 
     go get -v -u github.com/gorilla/websocket
 #### 引入
     import (
