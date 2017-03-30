@@ -1,22 +1,17 @@
 # beego学习笔记
-
 #### 安装
 命令行运行：
-
 ```
 go get -v -u github.com/astaxie/beego
 go get -v -u github.com/beego/bee
 ```
-
 #### 新建项目
 命令行运行：
-
 ```
 cd $GOPATH/src
 bee new hello
 cd hello
 ```
-
 #### 调试运行
 命令行运行：
 
@@ -24,7 +19,6 @@ cd hello
 bee run hello
 ```
 一旦程序开始运行，您就可以在浏览器中打开 http://localhost:8080/ 进行访问。
- 
 #### 简单事例
 ```
 package main
@@ -46,11 +40,8 @@ func main() {
     beego.Run()
 }
 ```
-
 #### bee 工具命令详解
-
 我们在命令行输入 `bee`，可以看到如下的信息：
-
 ```
 Bee is a tool for managing beego framework.
 
