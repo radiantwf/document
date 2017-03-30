@@ -55,7 +55,7 @@ location / {
 #### 负载均衡配置
 如果Nginx没有仅仅只能代理一台服务器的话，那它也不可能像今天这么火，Nginx可以配置代理多台服务器，当一台服务器宕机之后，仍能保持系统可用。具体配置过程如下：
 
-1. 在http节点下，添加upstream节点。
+1.在http节点下，添加upstream节点。
 
 ```
 upstream linuxidc { 
@@ -63,7 +63,7 @@ upstream linuxidc {
     server 10.0.0.85:8980; 
 }
 ```
-2. 将server节点下的location节点中的proxy_pass配置为：http:// + upstream名称，即“
+2.将server节点下的location节点中的proxy_pass配置为：http:// + upstream名称，即“
 http://linuxidc”.
 
 ```
@@ -73,7 +73,7 @@ location / {
     proxy_pass http://linuxidc; 
 }
 ```
-3. 现在负载均衡初步完成了。upstream按照轮询（默认）方式进行负载，每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除。虽然这种方式简便、成本低廉。但缺点是：可靠性低和负载分配不均衡。适用于图片服务器集群和纯静态页面服务器集群。
+3.现在负载均衡初步完成了。upstream按照轮询（默认）方式进行负载，每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除。虽然这种方式简便、成本低廉。但缺点是：可靠性低和负载分配不均衡。适用于图片服务器集群和纯静态页面服务器集群。
 
 除此之外，upstream还有其它的分配策略，分别如下：
 
