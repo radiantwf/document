@@ -2,7 +2,7 @@
 
 #### 安装
 命令行运行：
- 
+
     go get -v -u gopkg.in/mgo.v2
 #### 引入
     import (
